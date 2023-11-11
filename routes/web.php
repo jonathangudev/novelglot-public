@@ -74,7 +74,6 @@ Route::post('posts/edit/{id}', function($id) {
 
     $post = Post::where('id','=',$id)->first();
     $post->title = request()->title;
-    $post->slug = Str::slug(request()->title, "-");
 
     $post->content = request()->content;
 
