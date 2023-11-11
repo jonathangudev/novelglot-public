@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.author-photo{
+  width:100%;
+  max-width:600px;
+}
+
+.essay {
+  font-family: "Garamond", serif;
+}
+
+.essay h1 {
+  font-family: "Baskerville", serif;
+}
+
+.bracket {
+  font-family: 'Merriweather', serif;
+}
+
+.navbar-brand {
+  font-family: 'Merriweather', serif;
+}
+
+.special-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+ul { list-style-type: '- '; }
+
+
+@media (min-width: 480px) {
+  .essay-body {
+    font-size: 1.25rem;
+  }
+
+  .tight-nav {
+    padding-left:  2rem;
+    padding-right:  2rem;
+  }
+
+  .essay {
+
+  }
+
+  .special-container {
+    padding-left: max(100vw / 6 , (100vw - 750px)/2);
+    padding-right:  max(100vw / 6 , (100vw - 750px)/2);
+  }
+}
