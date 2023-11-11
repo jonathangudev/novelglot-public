@@ -18,7 +18,11 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/', function () {
-    return view('readerposts', ['posts' => Post::all()]);
+    $posts = cache()->remember("posts",60*60, function() {
+        return Post::all();
+    });
+
+    return view('readerposts', ['posts' => $posts]);
 });
 
 Route::get('/about', function () {
