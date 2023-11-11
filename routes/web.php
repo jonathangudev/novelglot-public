@@ -51,7 +51,12 @@ Route::post('/create', function () {
 })->middleware(['auth']);
 
 Route::get('/posts/{slug}', function ($slug) {
-    return view('post', ['post' => Post::where('slug','=',$slug)->first()]);
+
+    $post = cache()->remember("posts.{$slug}",60*60, function() use ($slug) {
+        return Post::where('slug','=',$slug)->first();
+    });
+
+    return view('post', ['post' => $post]);
 });
 
 Route::get('posts/edit/{id}', function($id) {
