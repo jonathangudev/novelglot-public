@@ -22,7 +22,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about', ['posts' => Post::all()]);
+    return view('about');
 });
 
 Route::get('/dashboard', function () {
