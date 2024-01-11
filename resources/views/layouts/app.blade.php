@@ -10,6 +10,11 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" as="font" type="font" crossorigin>
+
+        @import url('');
+
+
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
