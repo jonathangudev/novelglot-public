@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> -->
 
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" as="font" type="font" crossorigin>
+
 
     <!-- Required meta tags -->
     <meta charset="utf-8">

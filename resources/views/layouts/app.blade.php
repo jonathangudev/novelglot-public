@@ -12,9 +12,6 @@
 
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" as="font" type="font" crossorigin>
 
-        @import url('');
-
-
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
